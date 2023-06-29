@@ -2,7 +2,7 @@
 
 ## Future Junior Frontend Developer
 
-
+***
 ### Contact Information
 **Location:** Minsk, Belarus
 
@@ -16,7 +16,7 @@
 
 [**Codewars**](https://www.codewars.com/users/nosensejk)
 
-
+***
 
 ### About myself
 Hi, I'm Anton. I've just graduated from BSUIR and now I'm studying Frontend development. This is very intersting for me, so I want to develop in this industry.
