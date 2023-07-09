@@ -1,6 +1,70 @@
-.container {
-   width: 250px;
-   height: 250px;
-   background-color: aqua;
-   border-radius: 10px;
+body{
+   font-family: "Roboto", sans-serif;
+   padding: 0;
+}
+body > p{
+   font-size: 30px;
+}
+a{
+   text-decoration: none;
+}
+.avatar-name{
+   width: 33%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.wrap-head{
+   /* border: 1px solid #000; */
+   
+   background-color: #8deae4;
+   border-bottom: 5px solid #5e5e5e;
+}
+.avatar{
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+}
+.container{
+   width: 1024px;
+   margin: 0 auto;
+}
+.container-head{
+   
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+   /* border: 2px solid #000; */
+}
+.main {
+   margin-top: 20px;
+   width: 1024px;
+   height: fit-content;
+   
+   margin: 0 auto;
+}
+.wrap-main{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.about-me, .education, .skills, .code, .projects, .languages{
+   width: 50%;
+   border-bottom: 1px solid #4c4c4c3f;
+}
+footer{
+   height: 100%;
+   background-color: #8deae4;
+   border-top: 5px solid #5e5e5e;
+}
+.wrap-foot{
+   margin-top: 20px;
+}
+.links{
+   display: flex;
+   justify-content: space-between;
+}
+.wrap-foot > p{
+   text-align: end;
 }
