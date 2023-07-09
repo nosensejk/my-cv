@@ -3,12 +3,119 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Roboto&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="normalize.css">
    <link rel="stylesheet" href="style.css">
    <title>Document</title>
 </head>
 <body>
-   <div class="container">
-      Hello, World!!!
-   </div>
+   <header>
+      <div class="wrap-head">
+         <div class="container">
+            <div class="container-head">
+               <div class="avatar-name">
+                  <img class="avatar"  src="img/hoopla.png" alt="avatar">
+                  <div class="name">
+                     
+                     <h1>Anton Tur</h1>
+                     <h3>Future Frontend Developer</h3>
+                  </div>
+               </div>
+               
+               <nav class="contacts">
+                  <a href="https://github.com/nosensejk">
+                     <img width="50" height="50" src="img/icons8-github.svg" alt="github"/>
+                  </a>
+                  <a href="#">
+                     <img width="50" height="50" src="img/icons8-discord.svg" alt="discord--v1"/> 
+                  </a>
+                  <a href="#">
+                     <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/telegram.png" alt="telegram"/>
+                  </a>
+               </nav>
+            </div>
+         </div>
+      </div>
+   </header>
+   <main class="main">
+      <div class="container">
+         <div class="wrap-main">
+            <div class="about-me">
+               <h2>About Me</h2>
+               <p>
+                  Hi, I’m Anton. I’ve just graduated from BSUIR and now I’m studying Frontend development. This is very intersting for me, so I want to develop in this industry.
+               </p>
+            </div>
+         
+            <div class="skills">
+               <h2>Skills</h2>
+               <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript (Basics)</li>
+                  <li>MySQL</li>
+                  <li>Git/Github</li>
+               </ul>
+            </div>
+            <div class="code">
+               <h2>Code example</h2>
+               <a href="https://www.codewars.com/kata/56747fd5cb988479af000028">Kata</a>
+               <code>
+                  <pre>
+function getMiddle(s)
+{ 
+  let l = s.length;
+  if (l % 2 == 0)
+    res = s.substr(l/2-1, 2);  
+  else res = s.substr(Math.ceil(l/2)-1, 1);
+  return res;
+}
+                  </pre>
+                </code>
+            </div>
+            <div class="education">
+               <h2>Education</h2>
+               <ul>
+                  <li><b>Univeristy: </b>Belarusian State University Of Informatics And Radioelectronics, Faculty of Information Technologies and Control</li>
+                  <li><b>Courses: </b><a href="https://belhard.academy/">Belhard Academy: </a>“Modern Front-End using JavaScript and HTML5”</li>
+               </ul>
+            </div>
+            <div class="projects">
+               <h2>My projects</h2>
+               <ul>
+                  <li><a href="#">This CV :)</a></li>
+                  <li><a href="https://github.com/nosensejk/button"> Cool button</a> (actually it's not my idea, I saw it somewhere)</li>
+               </ul>
+            </div>
+            <div class="languages">
+               <h2>Languages</h2>
+               <ul>
+                  <li>Russian: native</li>
+                  <li>Belarussian: native</li>
+                  <li>English: C1 ("Anywhere Club" test), but I consider myself B2</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </main>
+   <footer>
+      <div class="container">
+         <div class="wrap-foot">
+            <nav class="links">
+               <a href="https://rs.school/js/">
+                  <img width="150" height="50" src="img/rs_school_js.svg" alt="rsschool">
+               </a>
+               <a href="https://discordapp.com/users/679711707399979226/">
+                  <img src="img/icons8-discord.svg" alt="discord">
+               </a>
+            </nav>
+            <p>2023 © nosensejk</p>
+         </div>
+         
+      </div>
+   </footer>
 </body>
 </html>
+
