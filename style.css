@@ -1,6 +1,7 @@
 body{
    font-family: "Roboto", sans-serif;
    padding: 0;
+   margin: 0;
 }
 body > p{
    font-size: 30px;
@@ -24,6 +25,8 @@ a{
    width: 70px;
    height: 70px;
    border-radius: 50%;
+   background: no-repeat url(/img/hoopla.png);
+   background-size: cover;
 }
 .container{
    width: 1024px;
@@ -57,14 +60,12 @@ footer{
    height: 100%;
    background-color: #8deae4;
    border-top: 5px solid #5e5e5e;
-}
-.wrap-foot{
-   margin-top: 20px;
+   padding-bottom: 1px;
 }
 .links{
    display: flex;
    justify-content: space-between;
 }
-.wrap-foot > p{
+footer p{
    text-align: end;
 }

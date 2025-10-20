@@ -19,7 +19,7 @@
 ***
 
 ### About myself
-Hi, I'm Anton. I've just graduated from BSUIR and now I'm studying Frontend development. This is very intersting for me, so I want to develop in this industry.
+Hi, I'm Anton. I've graduated from BSUIR and now I'm studying Frontend development. This is very intersting for me, so I want to develop in this industry.
 
 ### Skills
 * HTML

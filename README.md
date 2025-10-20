@@ -1,6 +1,6 @@
 # rsschool-cv
 
-https://nosensejk.github.io/rsschool-cv/cv
+https://nosensejk.github.io/my-cv/cv
 
-https://nosensejk.github.io/rsschool-cv/
+https://nosensejk.github.io/my-cv/
 
