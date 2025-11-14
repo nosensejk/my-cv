@@ -2,6 +2,7 @@ body{
    font-family: "Roboto", sans-serif;
    padding: 0;
    margin: 0;
+   
 }
 body > p{
    font-size: 30px;
@@ -25,7 +26,7 @@ a{
    width: 70px;
    height: 70px;
    border-radius: 50%;
-   background: no-repeat url(/img/hoopla.png);
+   background: no-repeat url(img/hoopla.png);
    background-size: cover;
 }
 .container{
@@ -46,6 +47,7 @@ a{
    height: fit-content;
    
    margin: 0 auto;
+   min-height: 100vh;
 }
 .wrap-main{
    display: flex;
