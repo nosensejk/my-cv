@@ -18,13 +18,14 @@ a{
 }
 .main-container{
    min-height: 100dvh;
+   max-width: 100vw;
    display: grid;
    grid-template-rows: auto 1fr auto;
    grid-template-columns: minmax(0, 1fr);
 }
 .wrap-head{
    /* border: 1px solid #000; */
-   max-width: 100vw;
+   
    background-color: #8deae4;
    border-bottom: 5px solid #5e5e5e;
 }
@@ -36,7 +37,7 @@ a{
    background-size: cover;
 }
 .container{
-   width: 1024px;
+   max-width: 1024px;
    margin: 0 auto;
 }
 .container-head{
@@ -49,7 +50,7 @@ a{
 }
 .main {
    margin-top: 20px;
-   width: 1024px;
+   max-width: 1024px;
    height: fit-content;
    
    margin: 0 auto;
