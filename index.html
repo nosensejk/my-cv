@@ -14,92 +14,91 @@
     <title>toxatur CV</title>
   </head>
   <body>
+    <div class="page-progress-container">
+      <div class="page-progress-bar" id="pageProgressBar"></div>
+    </div>
+
     <div class="cursor-glow" id="cursorGlow"></div>
 
     <div class="main-container">
-      <header>
-        <div class="wrap-head">
-          <div class="container">
-            <div class="container-head">
-              <div class="avatar-name">
-                <div class="avatar"></div>
-                <div class="name">
-                  <h1>Anton Tur</h1>
-                  <h3>Future Frontend Developer</h3>
-                </div>
-              </div>
-
-              <nav class="contacts">
-                <a
-                  href="https://github.com/nosensejk"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <img
-                    width="54"
-                    height="54"
-                    src="img/icons8-github.svg"
-                    alt="github"
-                  />
-                </a>
-                <a
-                  href="https://discordapp.com/users/679711707399979226/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <img
-                    width="54"
-                    height="54"
-                    src="img/icons8-discord.svg"
-                    alt="discord"
-                  />
-                </a>
-                <a href="https://t.me/nosensejk" target="_blank" rel="noopener">
-                  <img
-                    width="54"
-                    height="54"
-                    src="https://img.icons8.com/ios-filled/50/telegram.png"
-                    alt="telegram"
-                  />
-                </a>
-              </nav>
+      <header class="header">
+        <div class="container header-inner">
+          <div class="avatar-name">
+            <div class="avatar"></div>
+            <div class="name">
+              <h1>Anton Tur</h1>
+              <h3 class="typewriter">Future Frontend Developer</h3>
             </div>
           </div>
+          <nav class="contacts">
+            <a
+              href="https://github.com/nosensejk"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                width="24"
+                height="24"
+                src="img/icons8-github.svg"
+                alt="github"
+              />
+            </a>
+            <a
+              href="https://discordapp.com/users/679711707399979226/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                width="24"
+                height="24"
+                src="img/icons8-discord.svg"
+                alt="discord"
+              />
+            </a>
+            <a href="https://t.me/nosensejk" target="_blank" rel="noopener">
+              <img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/ios-filled/50/telegram.png"
+                alt="telegram"
+              />
+            </a>
+          </nav>
         </div>
       </header>
 
-      <main class="main">
-        <div class="container">
-          <div class="wrap-main">
-            <div class="about-me">
-              <h2>About Me</h2>
-              <p>
-                Hi, I’m Anton. I’ve graduated from BSUIR and now I’m studying
-                Frontend development. This is very interesting for me, so I want
-                to develop in this industry. I'm open to learn a new stack of
-                technologies if needed.
-              </p>
-            </div>
+      <main class="container main">
+        <div class="cv-grid">
+          <section class="card">
+            <h2>About Me</h2>
+            <p>
+              Hi, I’m Anton. I’ve graduated from BSUIR and now I’m studying
+              Frontend development. This is very interesting for me, so I want
+              to develop in this industry. I'm open to learn a new stack of
+              technologies if needed.
+            </p>
+          </section>
 
-            <div class="skills">
-              <h2>Skills</h2>
-              <ul class="skills-list">
-                <li class="skill-badge">HTML</li>
-                <li class="skill-badge">CSS</li>
-                <li class="skill-badge">JavaScript</li>
-                <li class="skill-badge">Express.js</li>
-                <li class="skill-badge">React (Basics)</li>
-                <li class="skill-badge">Angular (Basics)</li>
-                <li class="skill-badge">TypeScript</li>
-                <li class="skill-badge">MySQL</li>
-                <li class="skill-badge">Prisma</li>
-                <li class="skill-badge">Supabase</li>
-                <li class="skill-badge">Git / GitHub</li>
-              </ul>
-            </div>
+          <section class="card">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+              <li class="skill-badge">HTML</li>
+              <li class="skill-badge">CSS</li>
+              <li class="skill-badge">JavaScript</li>
+              <li class="skill-badge">Express.js</li>
+              <li class="skill-badge">React (Basics)</li>
+              <li class="skill-badge">Angular (Basics)</li>
+              <li class="skill-badge">TypeScript</li>
+              <li class="skill-badge">MySQL</li>
+              <li class="skill-badge">Prisma</li>
+              <li class="skill-badge">Supabase</li>
+              <li class="skill-badge">Git / GitHub</li>
+            </ul>
+          </section>
 
-            <div class="code">
-              <h2>Code Example</h2>
+          <section class="card">
+            <h2>Code Example</h2>
+            <div class="code-box">
               <div class="code-header">
                 <span>javascript-kata.js</span>
                 <a
@@ -120,279 +119,286 @@
   <span class="keyword">return</span> res;
 }</code></pre>
             </div>
+          </section>
 
-            <div class="education">
-              <h2>Education</h2>
-              <ul class="edu-timeline">
-                <li>
-                  <div class="edu-title">BSUIR</div>
-                  <div class="edu-desc">
-                    Belarusian State University Of Informatics And
-                    Radioelectronics, Faculty of Information Technologies and
-                    Control
-                  </div>
-                </li>
-                <li>
-                  <div class="edu-title">Belhard Academy</div>
-                  <div class="edu-desc">
-                    <a href="https://belhard.academy/"
-                      >“Modern Front-End using JavaScript and HTML5”</a
-                    >
-                  </div>
-                </li>
-                <li>
-                  <div class="edu-title">Rolling Scopes School</div>
-                  <div class="edu-desc">
-                    <a href="https://rs.school/courses/javascript-preschool-ru"
-                      >Front-end Pre-school Course</a
-                    >
-                  </div>
-                </li>
-                <li>
-                  <div class="edu-title">iTransition</div>
-                  <div class="edu-desc">
-                    "Commercial Software Development - JavaScript"
-                  </div>
-                </li>
-              </ul>
-            </div>
+          <section class="card">
+            <h2>Education</h2>
+            <ul class="edu-timeline">
+              <li>
+                <div class="edu-title">BSUIR</div>
+                <div class="edu-desc">
+                  Belarusian State University Of Informatics And
+                  Radioelectronics, Faculty of Information Technologies and
+                  Control
+                </div>
+              </li>
+              <li>
+                <div class="edu-title">Belhard Academy</div>
+                <div class="edu-desc">
+                  <a href="https://belhard.academy/"
+                    >“Modern Front-End using JavaScript and HTML5”</a
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="edu-title">Rolling Scopes School</div>
+                <div class="edu-desc">
+                  <a href="https://rs.school/courses/javascript-preschool-ru"
+                    >Front-end Pre-school Course</a
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="edu-title">iTransition</div>
+                <div class="edu-desc">
+                  "Commercial Software Development - JavaScript"
+                </div>
+              </li>
+            </ul>
+          </section>
 
-            <div class="languages">
-              <h2>Languages</h2>
-              <ul class="lang-list">
-                <li>
-                  <span class="lang-flag">RU</span>
-                  <div>
-                    <strong>Russian</strong>
-                    <p>Native</p>
-                  </div>
-                </li>
-                <li>
-                  <span class="lang-flag">BY</span>
-                  <div>
-                    <strong>Belarusian</strong>
-                    <p>Native</p>
-                  </div>
-                </li>
-                <li>
-                  <span class="lang-flag">EN</span>
-                  <div>
-                    <strong>English</strong>
-                    <p>Upper-Intermediate / Advanced (B2/C1)</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
+          <section class="card full-width">
+            <h2>Languages</h2>
+            <ul class="lang-list">
+              <li>
+                <span class="lang-flag">RU</span>
+                <div>
+                  <strong>Russian</strong>
+                  <p>Native</p>
+                </div>
+              </li>
+              <li>
+                <span class="lang-flag">BY</span>
+                <div>
+                  <strong>Belarusian</strong>
+                  <p>Native</p>
+                </div>
+              </li>
+              <li>
+                <span class="lang-flag">EN</span>
+                <div>
+                  <strong>English</strong>
+                  <p>Upper-Intermediate (B2)</p>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-            <div class="projects-section">
-              <h2>My Projects</h2>
-              <div class="slider-container">
-                <button class="slider-arrow prev" onclick="moveSlider(-1)">
-                  ‹
-                </button>
-                <button class="slider-arrow next" onclick="moveSlider(1)">
-                  ›
-                </button>
+          <section class="card full-width projects-section">
+            <h2>My Projects</h2>
+            <div class="slider-container">
+              <button
+                class="slider-arrow prev"
+                onclick="scrollSlider(-1)"
+                aria-label="Prev"
+              >
+                ‹
+              </button>
+              <button
+                class="slider-arrow next"
+                onclick="scrollSlider(1)"
+                aria-label="Next"
+              >
+                ›
+              </button>
 
-                <div class="projects-slider-track" id="sliderTrack">
-                  <div class="project-card">
-                    <a
-                      href="https://rating-music-nsjk.vercel.app/"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      <div class="project-img-wrapper">
-                        <img
-                          src="img/albumrater.png"
-                          alt="albumrater"
-                          onerror="
-                            this.src =
-                              'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&q=80'
-                          "
-                        />
-                      </div>
-                      <div class="project-info">
-                        <h4>AlbumRater App</h4>
-                        <p>Music rating platform</p>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="project-card">
-                    <a
-                      href="https://wordle-nsjk.vercel.app/"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      <div class="project-img-wrapper">
-                        <img
-                          src="img/wordle.png"
-                          alt="wordle"
-                          onerror="
-                            this.src =
-                              'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&q=80'
-                          "
-                        />
-                      </div>
-                      <div class="project-info">
-                        <h4>Wordle Game</h4>
-                        <p>Popular word puzzle clone</p>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="project-card">
-                    <a
-                      href="https://contexto-game-nsjk.vercel.app/"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      <div class="project-img-wrapper">
-                        <img
-                          src="img/contexto.png"
-                          alt="contexto"
-                          onerror="
-                            this.src =
-                              'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&q=80'
-                          "
-                        />
-                      </div>
-                      <div class="project-info">
-                        <h4>Contexto</h4>
-                        <p>AI-driven word guessing game</p>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="project-card">
-                    <a
-                      href="https://weather-app-nsjk.vercel.app/"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      <div class="project-img-wrapper">
-                        <img
-                          src="img/weather.png"
-                          alt="weather"
-                          onerror="
-                            this.src =
-                              'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&q=80'
-                          "
-                        />
-                      </div>
-                      <div class="project-info">
-                        <h4>Weather App</h4>
-                        <p>Real-time weather forecast</p>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="project-card">
-                    <a
-                      href="https://sudoku-nsjk.vercel.app/"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      <div class="project-img-wrapper">
-                        <img
-                          src="img/sudoku.png"
-                          alt="sudoku"
-                          onerror="
-                            this.src =
-                              'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&q=80'
-                          "
-                        />
-                      </div>
-                      <div class="project-info">
-                        <h4>Sudoku</h4>
-                        <p>Classic grid numbers game</p>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="project-card">
-                    <a
-                      href="https://job-tracker-nsjk.vercel.app/"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      <div class="project-img-wrapper">
-                        <img
-                          src="img/job-tracker.png"
-                          alt="job"
-                          onerror="
-                            this.src =
-                              'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&q=80'
-                          "
-                        />
-                      </div>
-                      <div class="project-info">
-                        <h4>Job Tracker</h4>
-                        <p>Application workflow CRM</p>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="project-card">
-                    <a
-                      href="https://minesweeper-nsjk.vercel.app/"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      <div class="project-img-wrapper">
-                        <img
-                          src="img/minesweeper.png"
-                          alt="minesweeper"
-                          onerror="
-                            this.src =
-                              'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&q=80'
-                          "
-                        />
-                      </div>
-                      <div class="project-info">
-                        <h4>Minesweeper</h4>
-                        <p>Retro logic desktop game</p>
-                      </div>
-                    </a>
-                  </div>
+              <div class="slider-track" id="sliderTrack">
+                <div class="project-card">
+                  <a
+                    href="https://rating-music-nsjk.vercel.app/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img
+                      src="img/albumrater.png"
+                      alt="albumrater"
+                      onerror="
+                        this.src =
+                          'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&q=80'
+                      "
+                    />
+                    <div class="project-info">
+                      <h4>AlbumRater App</h4>
+                      <p>Music rating platform</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="project-card">
+                  <a
+                    href="https://wordle-nsjk.vercel.app/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img
+                      src="img/wordle.png"
+                      alt="wordle"
+                      onerror="
+                        this.src =
+                          'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&q=80'
+                      "
+                    />
+                    <div class="project-info">
+                      <h4>Wordle Game</h4>
+                      <p>Popular word puzzle clone</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="project-card">
+                  <a
+                    href="https://contexto-game-nsjk.vercel.app/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img
+                      src="img/contexto.png"
+                      alt="contexto"
+                      onerror="
+                        this.src =
+                          'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&q=80'
+                      "
+                    />
+                    <div class="project-info">
+                      <h4>Contexto</h4>
+                      <p>AI-driven word guessing game</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="project-card">
+                  <a
+                    href="https://weather-app-nsjk.vercel.app/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img
+                      src="img/weather.png"
+                      alt="weather"
+                      onerror="
+                        this.src =
+                          'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&q=80'
+                      "
+                    />
+                    <div class="project-info">
+                      <h4>Weather App</h4>
+                      <p>Real-time weather forecast</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="project-card">
+                  <a
+                    href="https://sudoku-nsjk.vercel.app/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img
+                      src="img/sudoku.png"
+                      alt="sudoku"
+                      onerror="
+                        this.src =
+                          'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&q=80'
+                      "
+                    />
+                    <div class="project-info">
+                      <h4>Sudoku</h4>
+                      <p>Classic grid numbers game</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="project-card">
+                  <a
+                    href="https://job-tracker-nsjk.vercel.app/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img
+                      src="img/job-tracker.png"
+                      alt="job"
+                      onerror="
+                        this.src =
+                          'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&q=80'
+                      "
+                    />
+                    <div class="project-info">
+                      <h4>Job Tracker</h4>
+                      <p>Application workflow CRM</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="project-card">
+                  <a
+                    href="https://minesweeper-nsjk.vercel.app/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img
+                      src="img/minesweeper.png"
+                      alt="minesweeper"
+                      onerror="
+                        this.src =
+                          'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&q=80'
+                      "
+                    />
+                    <div class="project-info">
+                      <h4>Minesweeper</h4>
+                      <p>Retro logic desktop game</p>
+                    </div>
+                  </a>
                 </div>
               </div>
+
+              <div class="slider-progress-container">
+                <div class="slider-progress-bar" id="sliderProgressBar"></div>
+              </div>
             </div>
-          </div>
+          </section>
         </div>
       </main>
 
-      <footer>
-        <div class="container">
-          <p>2026 © nosensejk · Built with Passion & CSS Animations</p>
-        </div>
+      <footer class="footer">
+        <p>2026 © nosensejk</p>
       </footer>
     </div>
 
     <script>
-      // 1. Пошаговая прокрутка слайдера
-      function moveSlider(direction) {
+      // 1. Стрелки слайдера: скроллим на одну видимую карточку
+      function scrollSlider(direction) {
         const track = document.getElementById("sliderTrack");
-        if (!track) return;
+        if (track) {
+          const step =
+            track.clientWidth /
+            (window.innerWidth > 1024 ? 3 : window.innerWidth > 640 ? 2 : 1);
+          track.scrollBy({ left: step * direction, behavior: "smooth" });
+        }
+      }
 
-        const card = track.querySelector(".project-card");
-        if (!card) return;
+      // 2. Логика обновления индикатора прогресса слайдера
+      const track = document.getElementById("sliderTrack");
+      const sliderBar = document.getElementById("sliderProgressBar");
 
-        const cardWidth = card.getBoundingClientRect().width;
-        const gap = parseFloat(getComputedStyle(track).gap) || 0;
-
-        track.scrollBy({
-          left: (cardWidth + gap) * direction,
-          behavior: "smooth",
+      if (track && sliderBar) {
+        track.addEventListener("scroll", () => {
+          const maxScroll = track.scrollWidth - track.clientWidth;
+          const percentage = maxScroll > 0 ? track.scrollLeft / maxScroll : 0;
+          // Используем производительный scaleX для изменения заполнения полосы
+          sliderBar.style.transform = `scaleX(${percentage})`;
         });
       }
 
-      // 2. Логика подсветки под курсором (Только на десктопах с мышью)
-      const glowEl = document.getElementById("cursorGlow");
-      if (window.matchMedia("(pointer: fine)").matches && glowEl) {
+      // 3. Логика индикатора прогресса скролла страницы
+      const pageBar = document.getElementById("pageProgressBar");
+      window.addEventListener("scroll", () => {
+        const totalHeight =
+          document.documentElement.scrollHeight - window.innerHeight;
+        const pagePercentage =
+          totalHeight > 0 ? window.scrollY / totalHeight : 0;
+        pageBar.style.transform = `scaleX(${pagePercentage})`;
+      });
+
+      // 4. Spotlight трекинг под курсором
+      const glow = document.getElementById("cursorGlow");
+      if (window.matchMedia("(pointer: fine)").matches && glow) {
         window.addEventListener("mousemove", (e) => {
-          glowEl.style.setProperty("--x", `${e.clientX}px`);
-          glowEl.style.setProperty("--y", `${e.clientY}px`);
+          glow.style.setProperty("--x", `${e.clientX}px`);
+          glow.style.setProperty("--y", `${e.clientY}px`);
         });
       }
     </script>
