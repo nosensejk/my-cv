@@ -69,7 +69,7 @@
 
       <main class="container main">
         <div class="cv-grid">
-          <section class="card">
+          <section class="card reveal">
             <h2>About Me</h2>
             <p>
               Hi, I’m Anton. I’ve graduated from BSUIR and now I’m studying
@@ -79,7 +79,7 @@
             </p>
           </section>
 
-          <section class="card">
+          <section class="card reveal">
             <h2>Skills</h2>
             <ul class="skills-list">
               <li class="skill-badge">HTML</li>
@@ -96,7 +96,7 @@
             </ul>
           </section>
 
-          <section class="card">
+          <section class="card reveal">
             <h2>Code Example</h2>
             <div class="code-box">
               <div class="code-header">
@@ -121,7 +121,7 @@
             </div>
           </section>
 
-          <section class="card">
+          <section class="card reveal">
             <h2>Education</h2>
             <ul class="edu-timeline">
               <li>
@@ -157,7 +157,7 @@
             </ul>
           </section>
 
-          <section class="card full-width">
+          <section class="card full-width reveal">
             <h2>Languages</h2>
             <ul class="lang-list">
               <li>
@@ -178,13 +178,13 @@
                 <span class="lang-flag">EN</span>
                 <div>
                   <strong>English</strong>
-                  <p>Upper-Intermediate (B2)</p>
+                  <p>Upper-Intermediate / Advanced (B2/C1)</p>
                 </div>
               </li>
             </ul>
           </section>
 
-          <section class="card full-width projects-section">
+          <section class="card full-width projects-section reveal">
             <h2>My Projects</h2>
             <div class="slider-container">
               <button
@@ -354,36 +354,33 @@
       </main>
 
       <footer class="footer">
-        <p>2026 © nosensejk</p>
+        <p>2026 © nosensejk · Built with Passion & Modern CSS</p>
       </footer>
     </div>
 
     <script>
-      // 1. Стрелки слайдера: скроллим на одну видимую карточку
+      // Слайдер: Скроллим ровно на ширину карточки с учетом зазоров
       function scrollSlider(direction) {
         const track = document.getElementById("sliderTrack");
-        if (track) {
-          const step =
-            track.clientWidth /
-            (window.innerWidth > 1024 ? 3 : window.innerWidth > 640 ? 2 : 1);
-          track.scrollBy({ left: step * direction, behavior: "smooth" });
-        }
+        if (!track) return;
+        const card = track.querySelector(".project-card");
+        if (!card) return;
+        const step = card.offsetWidth + 24; // Ширина карточки + gap (24px)
+        track.scrollBy({ left: step * direction, behavior: "smooth" });
       }
 
-      // 2. Логика обновления индикатора прогресса слайдера
+      // Прогресс-бар слайдера
       const track = document.getElementById("sliderTrack");
       const sliderBar = document.getElementById("sliderProgressBar");
-
       if (track && sliderBar) {
         track.addEventListener("scroll", () => {
           const maxScroll = track.scrollWidth - track.clientWidth;
           const percentage = maxScroll > 0 ? track.scrollLeft / maxScroll : 0;
-          // Используем производительный scaleX для изменения заполнения полосы
           sliderBar.style.transform = `scaleX(${percentage})`;
         });
       }
 
-      // 3. Логика индикатора прогресса скролла страницы
+      // Прогресс-бар страницы
       const pageBar = document.getElementById("pageProgressBar");
       window.addEventListener("scroll", () => {
         const totalHeight =
@@ -393,7 +390,7 @@
         pageBar.style.transform = `scaleX(${pagePercentage})`;
       });
 
-      // 4. Spotlight трекинг под курсором
+      // Эффект Spotlight
       const glow = document.getElementById("cursorGlow");
       if (window.matchMedia("(pointer: fine)").matches && glow) {
         window.addEventListener("mousemove", (e) => {
@@ -401,6 +398,27 @@
           glow.style.setProperty("--y", `${e.clientY}px`);
         });
       }
+
+      // Intersection Observer для плавного появления блоков при скролле
+      const revealCallback = (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+            // Перестаем наблюдать за элементом после того, как он один раз красиво появился
+            observer.unobserve(entry.target);
+          }
+        });
+      };
+
+      const revealObserver = new IntersectionObserver(revealCallback, {
+        root: null, // следим относительно viewport
+        threshold: 0.15, // запускать, когда 15% блока показалось на экране
+        rootMargin: "0px 0px -50px 0px", // небольшая задержка снизу для естественности
+      });
+
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => revealObserver.observe(el));
     </script>
   </body>
 </html>

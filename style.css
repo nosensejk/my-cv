@@ -226,7 +226,6 @@ p {
    background-color: var(--primary);
    color: #0f172a; /* Темный цвет фона body для контраста с текстом */
    border-color: var(--primary);
-   transform: scale(1.05); /* Легкое аккуратное увеличение */
    box-shadow: 0 0 16px rgba(56, 189, 248, 0.35); /* Неоновое свечение */
 }
 
@@ -492,6 +491,22 @@ code {
    transform: scaleX(0); /* Заполняется динамически */
    will-change: transform;
    transition: transform 0.1s ease;
+}
+
+/* --- Стили для плавного всплытия при скролле (Scroll Reveal) --- */
+.reveal {
+   opacity: 0;
+   transform: translateY(30px); /* Смещение вниз перед появлением */
+   transition:
+      opacity 0.8s cubic-bezier(0.21, 1.02, 0.43, 1.01),
+      transform 0.8s cubic-bezier(0.21, 1.02, 0.43, 1.01);
+   will-change: opacity, transform;
+}
+
+/* Класс, который вешается через JS при попадании во viewport */
+.reveal.active {
+   opacity: 1;
+   transform: translateY(0);
 }
 
 /* --- Минимальные и чистые медиа-запросы --- */
